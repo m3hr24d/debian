@@ -1,8 +1,11 @@
+NAME=dockerzone/debian
+VERSION?=$(shell cat VERSION)
+
 brew:
 	sudo ./brew.sh
 
 build:
-	sudo docker build -t dockerzone/debian .
+	sudo docker build -t $(NAME):$(VERSION) .
 
 release:
-	docker push dockerzone/debian
+	docker push $(NAME):$(VERSION)
