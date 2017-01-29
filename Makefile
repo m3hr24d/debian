@@ -1,4 +1,4 @@
-NAME=dockerzone/debian
+NAME=dockage/debian
 VERSION?=$(shell cat VERSION)
 
 brew:
